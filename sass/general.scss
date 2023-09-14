@@ -1,0 +1,80 @@
+@import "variables";
+@import "common";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+
+
+* { margin: 0; padding: 0; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; -webkit-transition: 0.30s; -moz-transition: 0.30s; transition: 0.30s; }
+
+
+a, input, button, textarea, select { outline: none; -webkit-transition: 0.30s; -moz-transition: 0.30s; transition: 0.30s; }
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; }
+
+i, a, button { -webkit-transition: 0.30s linear; -moz-transition: 0.30s linear; transition: 0.30s linear; }
+
+a, a:hover, a:active, a:focus { text-decoration: none; }
+
+ul, li { list-style: none; margin:0;}
+
+
+html,body {font-family: 'Roboto', sans-serif; overflow-x: hidden; font-size: 14px;}
+
+.wrapper{float: left; width: 100%;}
+section
+{
+     padding: 50px 0px;
+     @extend .wrapper;
+}
+
+.disptable
+{
+     display: table-cell;
+     vertical-align: top;
+}
+
+.content
+{
+
+     p
+     {
+          font-size: 15px;
+          line-height: 24px;
+          color:#333333;
+     }
+}
+
+
+
+.btnn
+{
+
+     a, button
+     {
+          display: inline-block;
+          color: #fff;
+         text-transform: uppercase;
+         letter-spacing: 1px;
+         padding: 8px 15px;
+         border-radius: 4px;
+         border:0;
+         outline: none;
+         @extend .gradient;
+     }
+}
+
+.heading
+{
+     img
+     {
+          margin-right: 10px;
+     }
+
+     h2
+     {
+          font-size: 20px;
+          color: #111111;
+          line-height: 0;
+          margin-bottom: 35px;
+     }
+}

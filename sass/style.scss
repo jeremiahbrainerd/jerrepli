@@ -1,0 +1,389 @@
+@import "general";
+@import "variables";
+@import "common";
+
+.main-container
+{
+	.container
+	{
+		max-width: 990px;
+	}
+}
+
+header
+{	
+	background: #fff url('../img/headerbg.jpg') top center;
+	@extend .wrapper;
+
+	.logo
+	{
+		height: 111px;
+
+		a
+		{
+
+			img
+			{
+
+			}
+		}
+	}
+
+	.login-btnn
+	{	
+		
+
+		ul
+		{
+			margin-top:35px;
+			text-align: right;
+
+			li
+			{
+				display: inline-block;
+				margin-left:16px;
+
+				a
+				{
+					display: inline-block;
+					color: #fff;
+				    text-transform: uppercase;
+				    letter-spacing: 1px;
+				    padding: 8px 15px;
+				    border-radius: 4px;
+				    line-height: 24px;
+				    @extend .gradient;
+
+				    img
+				    {
+				    	margin-left:5px;
+				    }
+				}
+			}
+		}
+	}
+}
+
+nav
+{
+	background: #fff url('../img/navbg.jpg') top center;
+	@extend .wrapper;
+
+	.navbar-toggle
+	{
+		background:#fff;
+	}
+
+	ul
+	{
+
+		li
+		{
+
+			a
+			{
+				font-size: 16px;
+				text-transform: uppercase;
+				color:#fff;
+				text-transform: uppercase;
+				line-height: 67px;
+				padding: 20px 14px 23px !important;
+
+				&:hover
+				{
+					background:$theme_dark !important;
+					color:#fff;
+				}
+			}
+		}
+	}
+}
+
+
+.slider
+{
+	background: #fff url('../img/sliderbg.jpg') top center;
+	padding: 30px 0;
+	@extend .wrapper;
+
+	.carousel-inner
+	{
+		box-shadow: 6px 6px 7px 0px rgba(0, 0, 0, 0.22);
+		border-radius:4px;
+
+		.item
+		{
+			border-radius:4px;
+
+			img
+			{
+				width: 100%;
+				border-radius:4px;
+				height: 375px;
+			}
+		}
+	}
+
+	.carousel-control
+	{
+		width: 45px;
+	    height: 45px;
+	    top: 44%;
+	    font-size: 32px;
+	    background: transparent;
+	    opacity: 1;
+
+	    &.right{right: -40px;}
+	    &.left{left: -40px;}
+	}
+	
+}
+
+
+
+.about
+{
+	background: #f6f6f6;
+	box-shadow: inset 0px 0px 10px 0px #ccc;
+
+	.welcome
+	{
+
+		.welcome-note
+		{
+			@extend .disptable;
+
+			h2
+			{
+				font-size: 32px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color:#444444;
+				margin: 15px 0px 15px;
+			}
+		}
+
+		.welcome-img
+		{
+			@extend .disptable;
+			padding-left: 10px;
+
+			img
+			{
+
+			}
+		}
+	}
+
+	.content
+	{
+		padding:30px 0px 35px;
+	}
+
+	.newstype
+	{
+		.heading
+		{
+			margin-bottom: 57px;
+		}
+	}
+}
+
+
+
+.newstype
+{
+	ul
+	{
+		li
+		{
+			margin-bottom: 30px;
+
+			&:last-child
+			{
+				margin-bottom: 0px;
+			}
+
+			p
+			{
+				font-style: italic;
+				margin-bottom: 5px !important;
+			}
+
+			h2
+			{
+				font-size: 16px;
+			}
+
+			p, h2
+			{
+				margin: 0;
+				padding: 0;
+				color: #333333;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+
+.client-logo
+{	
+	background: #f6f6f6;
+	box-shadow: inset 0px 0px 10px 0px #ccc;
+	padding: 30px 0px;
+
+	.logo-list
+	{
+		text-align: center;
+
+		li
+		{
+			display: inline-block;
+			width:16%;
+
+			a{}
+		}
+	}
+}
+
+
+
+footer
+{
+	padding: 50px 0px;
+	@extend .wrapper;
+
+	.flex-1
+	{
+		p
+		{
+			margin-bottom: 10px;
+		}
+	}
+
+	.social-links
+	{
+		li
+		{	
+			margin-bottom: 10px;
+
+			a
+			{
+
+				i
+				{
+					width: 20px;
+				}
+			}
+		}
+	}
+	
+	.navigation
+	{
+		margin-left: 15px;
+
+		li
+		{
+			margin-bottom: 10px;
+			border-bottom: solid 1px $theme_border;
+			list-style: disc;
+
+			a
+			{
+
+			}
+		}
+	}
+
+
+	.form
+	{	
+
+		padding-top: 20px;
+
+		.border
+		{
+			border:solid 1px $theme_border;
+			border-radius:2px;
+			padding: 5px 0px;
+		}
+		
+		.mail-icon
+		{
+			@extend .disptable;
+
+			.icon
+			{
+				padding: 0px 10px;
+
+				i{}
+			}
+		}
+
+		.textbox
+		{
+			@extend .disptable;
+
+			.box
+			{
+
+				input[type="text"]
+				{
+					border:0;
+					border-left: solid 1px $theme_border;
+					padding-left: 10px;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+
+	.f-heading
+	{	
+		margin-bottom: 30px;
+
+		h2
+		{
+			margin:0;
+			padding:0;
+			font-size: 16px;
+			font-weight: 500;	
+		}
+	}
+
+	p
+	{
+		color:#666;
+		margin:0;
+		padding:0;
+	}
+
+	a
+	{
+		color:#666;
+	}
+}
+
+
+
+
+
+
+.copyright
+{
+	@extend .wrapper;
+
+
+	.container
+	{
+		border-top:solid 1px $theme_border;
+		padding: 30px 0px;
+	}
+}
+
+
+
+
+

@@ -1,0 +1,31 @@
+@import "variables";
+
+
+
+
+.gradient
+{
+	 /* Safari 4-5, Chrome 1-9 */
+  background: -webkit-gradient(linear, left top, right top, from($theme_dark), to($theme_light));
+
+  /* Safari 5.1, Chrome 10+ */
+  background: -webkit-linear-gradient(left, $theme_light, $theme_dark);
+
+  /* Firefox 3.6+ */
+  background: -moz-linear-gradient(left, $theme_light, $theme_dark);
+
+  /* IE 10 */
+  background: -ms-linear-gradient(left, $theme_light, $theme_dark);
+
+  /* Opera 11.10+ */
+  background: -o-linear-gradient(left, $theme_light, $theme_dark);
+}
+
+.border-gradient
+{ 
+	-moz-border-image: -moz-linear-gradient(left, $theme_light 0%, $theme_dark 100%);
+	-webkit-border-image: -webkit-linear-gradient(left, $theme_light 0%, $theme_dark 100%);
+	border-image: linear-gradient(to left, $theme_light 0%, $theme_dark 100%);
+	border-image-slice: 1;
+}
+
